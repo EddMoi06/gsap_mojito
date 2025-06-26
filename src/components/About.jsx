@@ -1,7 +1,6 @@
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { SplitText } from 'gsap/all'
-import React from 'react'
 
 const About = () => {
 
@@ -15,13 +14,9 @@ const About = () => {
         trigger: '#about',
         start: 'top center'
       }
-    })
-
-
-    .from(titleSplit.words, {
+    }).from(titleSplit.words, {
       opacity: 0, duration: 1, yPercent: 100, ease: 'expo.out', stagger: 0.02
-    })
-    .from('.top-grid div, .bottom-grid div ', {
+    }).from('.top-grid div, .bottom-grid div ', {
       opacity: 0, duration: 1, ease: 'power1.inOut', stagger: 0.04
     }, '-=0.5')
   })
