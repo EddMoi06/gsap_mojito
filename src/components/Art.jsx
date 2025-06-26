@@ -41,7 +41,7 @@ const Art = () => {
       })
   })
   return (
-    <div id="art">
+    <div id="work">
       <div className='container mx-auto h-full pt-20'>
         <h2 className='will-fade'>The Art</h2>
 
