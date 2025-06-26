@@ -35,13 +35,13 @@ const Menu = () => {
 
   const totalCocktails = allCocktails.length;
 
-  const goToSlide = (index : number) => {
+  const goToSlide = (index) => {
     const newIndex = (index + totalCocktails) % totalCocktails;
 
     setCurrentIndex(newIndex)
   }
 
-  const getCocktailAt = (indexOffset : number) => {
+  const getCocktailAt = (indexOffset) => {
     return allCocktails[(currentIndex + indexOffset + totalCocktails) % totalCocktails]
   }
 
